@@ -1,0 +1,50 @@
+{
+  "hello": "Salom",
+  "select_locale": "Tilni tanlang",
+  "currency_rates": "Valyuta kurslari",
+  "videos": "Videolar",
+  "bazaar": "Bozor",
+  "most_read": "Ko‘p o‘qilganlar",
+  "important_news": "Muhim yangiliklar",
+  "latest_news": "So‘nggi yangiliklar",
+  "author_choice": "Muharrir tanlovi",
+  "popular_news": "Ommabop yangiliklar",
+  "more_news": "Ko‘proq yangiliklar",
+  "related_news": "Mavzuga oid",
+  "follow_telegram": "Telegram kanalimizga obuna bo‘ling",
+  "load_more": "Yana yuklash",
+  "more": "Ko’proq",
+  "share": "Ulashish",
+  "copy_link": "Havoladan nusxa olish",
+  "copied": "Nusxa olindi",
+  "soc_media_pages": "Ijtimoiy tarmoqlardagi rasmiy sahifalar",
+  "about_website": "Sayt haqida",
+  "advertisement": "Reklama",
+  "rights": "Barcha huquqlar himoyalangan.",
+  "search_placeholder": "Sayt bo‘ylab qidiruv",
+  "search_count": "“{query}” so‘zi bo‘yicha qidiruv natijalari - {count} ta",
+  "tags_count": "“{tag}” tegi bo‘yicha qidiruv natijalari - {count} ta",
+  "meta": {
+    "title": "PIN–kod – moliyaviy farovonlik yo‘lida ishonchli hamrohingiz!",
+    "description": "Аҳолининг молиявий саводхонлигини ошириш мақсадида яратилган информацион сайт."
+  },
+  "navbar": {
+    "home": "Bosh sahifa",
+    "lenta": "Lenta",
+    "videos": "Videolar",
+    "literacy": "Moliyaviy savodxonlik",
+    "menu": "Menyu"
+  },
+  "footer": [
+    "Pinkod.uz saytida e'lon qilingan materiallardan nusxa ko'chirish, tarqatish va boshqa shakllarda foydalanish faqat tahririyat yozma roziligi bilan amalga oshirilishi mumkin.",
+    "O‘zbekiston Respublikasi Prezidenti Administratsiyasi huzuridagi Axborot va ommaviy kommunikatsiyalar agentligi tomonidan 15.10.2024 sanasida №440126 sonli guvohnoma bilan OAV sifatida ro‘yxatga olingan.",
+    "{website} saytida reklama joylashtirish masalasida {phone} telefon raqamiga ({telegram}) murojaat qiling. Tahririyat bilan aloqa: {email}"
+  ],
+  "about_title": "Moliyaviy farovonlik yo‘lida ishonchli hamrohingiz!",
+  "about_description": "Bu yerda barcha moliyaviy savollaringizga javob olishingiz, mutaxassislar fikrini kuzatib borishingiz va eng so'nggi iqtisodiy yangiliklardan xabardor bo'lib borishingiz mumkin.<br /><br />Siz bilan yaqinroq bo'lish va mavzuni chuqurroq yetkazish maqsadida, iloji boricha sodda, xalqona tilda suhbatlashamiz!",
+  "about_content": "<a href=\"https://pinkod.uz/\" target=\"_blank\">Pinkod.uz</a> – bank-moliya, fintex, iqtisodiyot, biznes va soliqqa oid yangiliklar hamda tahlillar, shuningdek, moliyaviy savodxonlikka doir ma’lumotlar taqdim etuvchi informatsion loyiha.<br /><br />Sayt O‘zbekiston Respublikasi Prezidenti Administratsiyasi huzuridagi Axborot va ommaviy kommunikatsiyalar agentligi tomonidan 15.10.2024 sanasida №440126 sonli guvohnoma bilan OAV sifatida ro‘yxatga olingan.<br /><br />Mazkur loyiha moliyaviy savodxonlik doirasida foydalanuvchilarga moliya, shaxsiy mablag‘larni boshqarish, investitsiya, tejamkorlik va budjetni rejalashtirish asoslarini yaxshiroq tushunishga yordam beruvchi qiziqarli materiallar va ta’lim resurslarini ham taqdim etadi.<br /><br />Pinkod’ning asosiy maqsadi moliyaviy tushunchalar va vositalarni hamda iqtisodiy xabarlarni keng ommaga, jumladan, yoshlar, oilalar va biznes egalari uchun soddalashtirilgan tilda yetkazib berish hisoblanadi.<br /><br />Sayt maqolalar, infografika, videodarslar va interaktiv kurslar orqali har bir foydalanuvchiga o‘z moliyaviy ko‘nikmalarini yaxshilash va iqtisodiy qarorlarni ishonch bilan qabul qilishda yordam beradi.",
+  "error_404": "Kechirasiz, xatolik yuz berdi. Bunday sahifa topilmadi.",
+  "back_to_home": "Bosh sahifaga qaytish",
+  "advertisement_phone": "Reklama va tijoriy hamkorlik masalasida quyidagi raqamga murojaat qiling.",
+  "advertisement_mail": "Reklama bilan bog‘liq savollarni quyidagi Telegram manziliga yuborishingiz mumkin."
+}

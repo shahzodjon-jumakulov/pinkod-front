@@ -1,0 +1,35 @@
+/* Common Fade */
+@keyframes fade-300 {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.fade-300-enter-active {
+  animation: fade-300 0.3s ease-in-out;
+}
+
+.fade-300-leave-active {
+  animation: fade-300 0.3s ease-in-out reverse;
+}
+
+/* Slide */
+@keyframes slide-300 {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.slide-300-enter-active {
+  animation: slide-300 0.3s ease-in-out;
+}
+
+.slide-300-leave-active {
+  animation: slide-300 0.3s ease-in-out reverse;
+}

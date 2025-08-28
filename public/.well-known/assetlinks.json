@@ -1,0 +1,15 @@
+[
+  {
+    "relation": [
+      "delegate_permission/common.handle_all_urls",
+      "delegate_permission/common.get_login_creds"
+    ],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "uz.pinkod.mobile",
+      "sha256_cert_fingerprints": [
+        "46:15:42:50:00:05:11:44:1E:34:D5:02:CF:99:38:E2:1B:C6:78:E4:FD:F0:69:2C:7C:A3:FA:53:D1:81:9B:BC"
+      ]
+    }
+  }
+]
