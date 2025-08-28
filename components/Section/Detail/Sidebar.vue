@@ -26,7 +26,7 @@ if (pinned.value.news.length === 0 || pinned.value.lang !== locale.value) {
     <SectionSlider :news="news" />
 
     <NuxtLink
-      :to="locale === 'ru' ? 'https://t.me/pinkodru' : 'https://t.me/pinkoduz'"
+      :to="locale === 'ru' ? 'https://t.me/pinkoduzru' : 'https://t.me/pinkoduz'"
       target="_blank"
       class="px-5 py-4 flex-center gap-4 bg-[#34AADF] relative group"
     >
