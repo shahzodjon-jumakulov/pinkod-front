@@ -6,8 +6,8 @@ const { tm, t } = useI18n();
 const textWithLinks = computed(() => {
   return t("footer[2]", {
     website: `<a href="https://pinkod.uz/" target="_blank" style="white-space: nowrap;">Pinkod.uz</a>`,
-    phone: `<a href="tel:+998951660110" target="_blank" style="white-space: nowrap;">+998 95 166 01 10</a>`,
-    telegram: `<a href="https://t.me/PinkodPR" target="_blank" style="white-space: nowrap;">Telegram: Pinkod PR</a>`,
+    // phone: `<a href="tel:+998951660110" target="_blank" style="white-space: nowrap;">+998 95 166 01 10</a>`,
+    telegram: `<a href="https://t.me/PinkodPR" target="_blank" style="white-space: nowrap;">Pinkod PR</a>`,
     email: `<a href="mailto:info@pinkod.uz" target="_blank" style="white-space: nowrap;">info@pinkod.uz</a>`,
   });
 });

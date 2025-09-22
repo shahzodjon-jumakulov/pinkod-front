@@ -9,8 +9,8 @@ const socials = computed(() => [
     name: "phone",
     icon: phone,
     title: t("advertisement_phone"),
-    username: "+998 95 166 01 10",
-    link: "tel:+998 95 166 01 10",
+    username: "+998 88 100 11 55",
+    link: "tel:+998 88 100 11 55",
   },
   {
     name: "mail",
