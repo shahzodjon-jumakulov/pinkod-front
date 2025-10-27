@@ -13,11 +13,25 @@ export default defineNuxtConfig({
       baseURL: process.env.BASE_URL || "https://cp.pincode.uz",
     },
   },
-  modules: ["@nuxt/ui", "@nuxtjs/i18n", "@vueuse/nuxt", "@nuxt/image"],
+
+  modules: [ 
+    "@nuxt/ui",
+    "@nuxtjs/i18n",
+    "@vueuse/nuxt",
+    "@nuxt/image",
+    "nuxt-gtag",
+  ],
+
+  gtag: {
+    id: "G-QPPM6QKREK",
+  },
+
   image: {
     domains: ["cp.pinkod.uz", "cp.pincode.uz"],
   },
+
   css: ["~/assets/css/main.scss"],
+
   i18n: {
     vueI18n: "./i18n.config.ts",
     strategy: "prefix_except_default",
