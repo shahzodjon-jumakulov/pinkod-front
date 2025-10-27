@@ -10,11 +10,17 @@ defineProps({
       <div class="flex flex-col gap-4">
         <div class="flex flex-col gap-3">
           <div class="flex items-center justify-between h-5">
-            <BaseMeta
+            <div class="flex items-center gap-3">
+              <BaseMeta
               :date="data.publish"
               :category="data.category"
               :link="true"
-            />
+              />
+              <div class="flex items-end gap-0.5 text-black-400">
+                <UIcon name="i-heroicons-eye" class="size-3.5" />
+                <span class="text-xs">{{ data.number_of_views }}</span>
+              </div>
+            </div>
             <SectionDetailShare :short="data.short_slug" :title="data.title" />
           </div>
           <h1 class="heading text-[1.5rem] md:text-[2rem] text-black-main">
