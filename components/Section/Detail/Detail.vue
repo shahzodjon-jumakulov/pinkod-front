@@ -76,7 +76,7 @@ defineProps({
 
 <style scoped lang="scss">
 .short:deep(*) {
-  color: var(--black-500, rgba(0, 0, 0, 0.4)) !important;
+  color: rgba(0, 0, 0, 0.7) !important;
 }
 
 figcaption,
