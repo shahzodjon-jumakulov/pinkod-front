@@ -1,7 +1,15 @@
 <script setup>
 const { locale } = useI18n();
 const videos = useVideos();
-const latest = useLatest();
+const popular = usePopular();
+if (popular.value.news.length < 8 || popular.value.lang !== locale.value) {
+  const { data } = await useMyFetch("/news/popular/", {
+    params: { limit: 8 },
+    transform: (data) => data.results,
+  });
+  popular.value.news = data.value;
+  popular.value.lang = locale.value;
+}
 
 if (videos.value.news.length === 0 || videos.value.lang !== locale.value) {
   const { data: videoNews, status } = await useMyFetch("/news/video/shorts/", {
@@ -45,7 +53,7 @@ await useMyFetch("/news/all/", {
     <SectionDoubleCategory first="soliq" third="worklife" />
 
     <SectionMainCarousel
-      :news="latest.news"
+      :news="popular.news"
       suffix="popular"
       title="most_read"
     />

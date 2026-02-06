@@ -69,5 +69,5 @@ ul {
 }
 
 blockquote {
-  @apply bg-green-100 px-8 py-5 font-semibold space-y-5;
+  @apply bg-green-100 px-8 py-5 font-semibold space-y-5 border-l-4  border-green-500;
 }

@@ -87,7 +87,7 @@ const handleShorts = (link) => {
             "
           >
             <CardShorts v-if="video" :link="slide.link" :title="slide.title" />
-            <CardCarousel v-else :data="slide" :image="slide.image_medium" />
+            <CardCarousel v-else :data="slide" :image="slide.image_medium || slide.image_small" />
           </swiper-slide>
         </swiper>
       </div>

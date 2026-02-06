@@ -42,7 +42,7 @@ if (latest.value.news.length === 0 || latest.value.lang !== locale.value) {
         <BaseCategoryTitle :title="$t('popular_news')" small />
         <div class="flex flex-col gap-4">
           <CardCarousel
-            v-for="item in popular.news"
+            v-for="item in popular.news.slice(0, 2)"
             :key="item.id"
             :data="item"
             :image="item.image_small"
