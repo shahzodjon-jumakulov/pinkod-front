@@ -46,7 +46,12 @@ await useMyFetch("/news/all/", {
 
     <SectionDoubleCategory first="finlit" second="bank" />
 
-    <SectionMainCarousel :news="bazaar" suffix="bazaar" title="bazaar" />
+    <SectionMainCarousel
+      :news="bazaar"
+      suffix="bazaar"
+      title="bazaar"
+      :to="locale === 'ru' ? '/category/rnok' : '/category/bozor'"
+    />
 
     <SectionDoubleCategory first="iqtisodiyot" class="!pb-0" />
 

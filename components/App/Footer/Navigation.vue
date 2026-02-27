@@ -43,8 +43,8 @@ onMounted(() => {
 <template>
   <div class="z-[98]">
     <div class="" ref="space"></div>
-    <div class="fixed bottom-0 w-full md:hidden" ref="navbarRef">
-      <div class="bg-white-main border-t border-black-100">
+    <div class="fixed bottom-0 w-full md:hidden shadow-[0_-4px_12px_rgba(0,0,0,0.08)]" ref="navbarRef">
+      <div class="bg-white-main">
         <UContainer class="grid grid-cols-4 gap-2">
           <NuxtLinkLocale
             v-for="item in navbar"

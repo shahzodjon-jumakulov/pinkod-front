@@ -25,7 +25,7 @@ if (popular.value.news.length === 0 || popular.value.lang !== locale.value) {
 
 if (latest.value.news.length === 0 || latest.value.lang !== locale.value) {
   const { data } = await useMyFetch("/news/all/", {
-    params: { limit: 6 },
+    params: { limit: 8 },
     transform: (data) => data.results,
   });
   latest.value.news = data.value;
@@ -80,7 +80,7 @@ if (latest.value.news.length === 0 || latest.value.lang !== locale.value) {
 
             <div
               v-if="latest.news.length > 1"
-              class="absolute bottom-0 w-full h-[11rem] gradient pointer-events-none group-hover/gradient:opacity-0 transition-opacity duration-300 ease-in-out"
+              class="absolute -bottom-0.5 w-full h-[11rem] gradient pointer-events-none group-hover/gradient:opacity-0 transition-opacity duration-300 ease-in-out"
             ></div>
           </div>
           <UButton :to="localePath('/news')" :label="$t('more_news')" block />

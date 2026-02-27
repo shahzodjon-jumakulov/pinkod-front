@@ -78,7 +78,7 @@ onMounted(() => {
           v-if="next"
           @click="load"
           :disabled="disabled"
-          :label="$t('load_more')"
+          :label="$t('more')"
           block
         />
       </div>

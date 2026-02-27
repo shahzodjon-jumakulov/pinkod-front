@@ -11,7 +11,7 @@ export default defineAppConfig({
       wrapper: "z-[100]",
       container: "items-center",
       padding: "!p-5",
-      overlay: { background: "bg-black-500" },
+      overlay: { background: "bg-black-500 dark:bg-black-500" },
       background: "bg-white-main",
     },
     divider: {

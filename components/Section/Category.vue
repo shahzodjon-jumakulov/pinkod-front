@@ -1,6 +1,6 @@
 <script setup>
 const props = defineProps({ category: String });
-const limit = 18;
+const limit = 7;
 
 const news = ref([]);
 const next = ref(null);
@@ -41,22 +41,38 @@ onMounted(() => {
 <template>
   <div class="flex flex-col gap-5 md:gap-8" v-if="news.length">
     <BaseCategoryTitle :title="news[0].category.name" />
-    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-5 lg:gap-y-8">
-      <CardCategory
-        v-for="(item, index) in news"
-        :key="item.id"
-        :data="item"
-        :class="{
-          even: index % 2 === 1,
-          'even-tablet': index % 4 === 1 || index % 4 === 2,
-        }"
-      />
+    <div>
+      <div
+        class="grid md:grid-cols-2 lg:grid-cols-3 gap-5 lg:gap-y-8 max-md:hidden"
+      >
+        <CardCategory
+          v-for="(item, index) in news"
+          :key="item.id"
+          :data="item"
+          :class="{
+            even: index % 2 === 1,
+            'even-tablet': index % 4 === 1 || index % 4 === 2,
+          }"
+        />
+      </div>
+      <div class="flex flex-col gap-3 md:hidden">
+        <CardCategory :data="news[0]" class="" />
+        <hr />
+        <div
+          class="flex flex-col gap-3"
+          v-for="(item, index) in news.slice(1)"
+          :key="item.id"
+        >
+          <hr v-if="index !== 0" />
+          <CardHorizontal :data="item" />
+        </div>
+      </div>
     </div>
     <UButton
       v-if="next"
       @click="load"
       :disabled="disabled"
-      :label="$t('load_more')"
+      :label="$t('more')"
       block
     />
   </div>
