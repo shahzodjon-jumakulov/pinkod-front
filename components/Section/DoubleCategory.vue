@@ -1,6 +1,6 @@
 <script setup>
 const props = defineProps({ first: String, second: String, third: String });
-const limit = 6;
+const limit = 7;
 
 const firstNews = ref([]);
 const secondNews = ref([]);

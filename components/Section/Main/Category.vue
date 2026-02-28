@@ -8,9 +8,11 @@ const props = defineProps({ news: Array });
       :title="news[0].category.name"
       :to="`/category/${news[0].category.slug}`"
     />
-    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-5 lg:gap-y-8">
+    <div
+      class="grid md:grid-cols-2 lg:grid-cols-3 gap-5 lg:gap-y-8 max-md:hidden"
+    >
       <CardCategory
-        v-for="(item, index) in news"
+        v-for="(item, index) in news.slice(0, 6)"
         :key="item.id"
         :data="item"
         :class="{
@@ -18,6 +20,18 @@ const props = defineProps({ news: Array });
           'even-tablet': index % 4 === 1 || index % 4 === 2,
         }"
       />
+    </div>
+    <div class="flex flex-col gap-3 md:hidden">
+      <CardCategory :data="news[0]" class="" />
+      <hr />
+      <div
+        class="flex flex-col gap-3"
+        v-for="(item, index) in news.slice(1)"
+        :key="item.id"
+      >
+        <hr v-if="index !== 0" />
+        <CardHorizontal :data="item" />
+      </div>
     </div>
   </div>
 </template>

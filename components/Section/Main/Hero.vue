@@ -25,7 +25,7 @@ if (popular.value.news.length === 0 || popular.value.lang !== locale.value) {
 
 if (latest.value.news.length === 0 || latest.value.lang !== locale.value) {
   const { data } = await useMyFetch("/news/all/", {
-    params: { limit: 8 },
+    params: { limit: 6 },
     transform: (data) => data.results,
   });
   latest.value.news = data.value;
@@ -71,7 +71,7 @@ if (latest.value.news.length === 0 || latest.value.lang !== locale.value) {
           <div class="relative flex flex-col gap-4 group/gradient grow">
             <div
               class="flex flex-col gap-4"
-              v-for="(item, index) in latest.news"
+              v-for="(item, index) in latest.news.slice(0, 6)"
               :key="item.id"
             >
               <hr class="md:hidden" v-if="index !== 0" />

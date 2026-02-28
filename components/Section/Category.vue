@@ -1,6 +1,6 @@
 <script setup>
 const props = defineProps({ category: String });
-const limit = 7;
+const limit = 12;
 
 const news = ref([]);
 const next = ref(null);

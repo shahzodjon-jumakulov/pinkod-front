@@ -32,7 +32,7 @@ await useMyFetch("/news/all/", {
 </script>
 
 <template>
-  <div>
+  <div class="mb-5">
     <SectionMainHero />
 
     <SectionMainCarousel
