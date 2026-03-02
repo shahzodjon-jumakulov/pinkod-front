@@ -49,10 +49,6 @@ onMounted(() => {
           v-for="(item, index) in news"
           :key="item.id"
           :data="item"
-          :class="{
-            even: index % 2 === 1,
-            'even-tablet': index % 4 === 1 || index % 4 === 2,
-          }"
         />
       </div>
       <div class="flex flex-col gap-3 md:hidden">

@@ -11,7 +11,7 @@ defineProps({
   <NuxtLinkLocale :to="`/news/${data.slug}`" class="flex flex-col group">
     <BaseOverlayImage :image="data.image_medium" :video="video" />
     <div
-      class="py-4 max-md:pb-0 flex flex-col gap-2 group-[.even]:lg:bg-green-200 group-[.even]:lg:p-4 group-[.even]:max-md:bg-green-200 group-[.even]:max-md:p-4 group-[.even-tablet]:md:max-lg:bg-green-200 group-[.even-tablet]:md:max-lg:p-4 grow"
+      class="py-4 max-md:pb-0 flex flex-col gap-2 lg:shadow-lg lg:p-4 grow"
     >
       <BaseMeta
         :date="data.publish"

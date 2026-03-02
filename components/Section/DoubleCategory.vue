@@ -52,7 +52,7 @@ if (props.third) {
       />
       <div class="grid lg:grid-cols-2 gap-y-4 gap-x-10" v-if="thirdNews.length">
         <div
-          class="flex flex-col gap-4 max-lg:[&:nth-child(n+6)]:hidden"
+          class="flex flex-col gap-4 max-md:hidden max-lg:[&:nth-child(n+8)]:hidden"
           v-for="(item, index) in thirdNews"
           :key="item.id"
         >
@@ -62,6 +62,18 @@ if (props.third) {
             class="border-t border-dark-green-300 dark:border-dark-green-300"
           />
           <CardHorizontal :data="item" />
+        </div>
+        <div
+          class="flex flex-col gap-4 md:hidden"
+          v-for="(item, index) in thirdNews.slice(0, 7)"
+          :key="item.id"
+        >
+          <hr
+            v-if="index !== 0"
+            class="border-t border-dark-green-300 dark:border-dark-green-300"
+          />
+          <CardCategory v-if="index === 0" :data="item" class="" />
+          <CardHorizontal v-else :data="item" />
         </div>
       </div>
       <UButton :label="$t('more_news')" block :to="`/category/${third}`" />
