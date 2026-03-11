@@ -55,7 +55,7 @@ await useMyFetch("/news/all/", {
       :to="locale === 'ru' ? '/category/rnok' : '/category/bozor'"
     />
 
-    <SectionDoubleCategory first="texnologiya" />
+    <SectionDoubleCategory first="texnologiya" class="!pb-0" />
 
     <SectionDoubleCategory first="soliq" second="worklife" />
 
