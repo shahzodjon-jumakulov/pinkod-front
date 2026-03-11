@@ -32,7 +32,7 @@ await useMyFetch("/news/all/", {
 </script>
 
 <template>
-  <div class="mb-5">
+  <div>
     <SectionMainHero />
 
     <SectionMainCarousel
@@ -44,7 +44,9 @@ await useMyFetch("/news/all/", {
       video
     />
 
-    <SectionDoubleCategory first="finlit" second="bank" />
+    <SectionDoubleCategory first="finlit" second="bank" class="!pb-0" />
+
+    <SectionDoubleCategory first="iqtisodiyot" />
 
     <SectionMainCarousel
       :news="bazaar"
@@ -53,9 +55,7 @@ await useMyFetch("/news/all/", {
       :to="locale === 'ru' ? '/category/rnok' : '/category/bozor'"
     />
 
-    <SectionDoubleCategory first="iqtisodiyot" class="!pb-0" />
-
-    <SectionDoubleCategory first="soliq" third="worklife" />
+    <SectionDoubleCategory first="soliq" second="worklife" />
 
     <SectionMainCarousel
       :news="popular.news"
