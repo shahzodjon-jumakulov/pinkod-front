@@ -105,16 +105,55 @@ figcaption,
 
     &.table {
       width: 100%;
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
     }
   }
 
   :deep(table) {
-    border: 1px solid theme("colors.green.main");
     width: 100%;
+    border-collapse: collapse;
+    border-top: 3px solid theme("colors.dark-green.main");
+    font-size: 0.9375rem;
+    line-height: 1.5;
 
-    td {
-      border: 1px solid theme("colors.green.main");
-      padding: 0.5rem;
+    thead tr {
+      background-color: theme("colors.dark-green.main");
+
+      th {
+        padding: 0.75rem 1rem;
+        text-align: left;
+        font-weight: 600;
+        color: theme("colors.white.main");
+        border-right: 1px solid theme("colors.white.200");
+        white-space: nowrap;
+      }
+    }
+
+    tbody {
+      tr {
+        border-bottom: 1px solid theme("colors.black.200");
+        transition: background-color 0.15s ease;
+
+        &:hover {
+          background-color: theme("colors.green.200");
+        }
+      }
+
+      td {
+        padding: 0.625rem 1rem;
+        border: 1px solid theme("colors.black.200");
+        color: theme("colors.black.600");
+        vertical-align: top;
+      }
+    }
+
+    caption {
+      caption-side: bottom;
+      margin-top: 0.375rem;
+      font-size: 0.8125rem;
+      color: theme("colors.black.400");
+      text-align: left;
     }
   }
 

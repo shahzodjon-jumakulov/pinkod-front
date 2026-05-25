@@ -1,6 +1,9 @@
 <script setup>
 const localePath = useLocalePath();
 const { slug } = useRoute().params;
+definePageMeta({
+  layout: "detail",
+});
 
 const { data } = await useMyFetch(`/news/${slug}/`);
 
@@ -36,7 +39,7 @@ useSeoMeta({
   <div>
     <UContainer class="mb-10 md:mb-16" v-if="data">
       <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-6">
-        <SectionDetail :data="data" class="lg:col-span-2" />
+        <SectionDetail :data="data" class="lg:col-span-2 bg-white-main p-6 shadow-md" />
         <div class="max-lg:hidden">
           <SectionDetailSidebar class="lg:sticky top-[5rem]" />
         </div>
